@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E3F2FD"
@@ -12,14 +13,14 @@
         android:id="@+id/textLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="Nagoya, Japan"
+        android:textColor="#212121"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#212121"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="40dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- 天気アイコン -->
 
@@ -31,7 +32,7 @@
         android:layout_height="120dp"
         android:layout_marginTop="100dp"
         android:contentDescription="Weather Icon"
-        android:src="@drawable/ic_sunny"
+        android:src="@drawable/tennki_illust1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,39 +43,39 @@
         android:id="@+id/textTemperature"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="27°C"
+        android:textColor="#212121"
         android:textSize="48sp"
         android:textStyle="bold"
-        android:textColor="#212121"
-        app:layout_constraintTop_toBottomOf="@id/imageWeather"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageWeather" />
 
     <!-- 天気の説明 -->
     <TextView
         android:id="@+id/textCondition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="晴れ"
-        android:textSize="20sp"
         android:textColor="#424242"
-        app:layout_constraintTop_toBottomOf="@id/textTemperature"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTemperature" />
 
     <!-- 追加情報（湿度や風速など） -->
     <TextView
         android:id="@+id/textDetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:text="湿度: 60%   風速: 5 m/s"
-        android:textSize="16sp"
         android:textColor="#616161"
-        app:layout_constraintTop_toBottomOf="@id/textCondition"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="12dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textCondition" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
