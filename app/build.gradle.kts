@@ -26,13 +26,17 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        isCoreLibraryDesugaringEnabled = true
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    viewBinding{
+        enable = true
     }
 }
 
 dependencies {
-
+    coreLibraryDesugaring(libs.desugar.jdk.libs)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
@@ -40,4 +44,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation(libs.datastore.preferences)
+    implementation(libs.datastore.preferences.rxjava3)
+    implementation(libs.okhttp)
+    implementation(libs.moshi)
 }
