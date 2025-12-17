@@ -1,6 +1,6 @@
 package jp.ac.meijo.android.wata_whether;
 
-public class Forecast {
+public class Forecast {// 天気情報
     public String date;
     public String dateLabel;
     public String telop;
