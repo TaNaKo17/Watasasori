@@ -2,7 +2,7 @@ package jp.ac.meijo.android.wata_whether;
 
 import java.util.List;
 
-public class WeatherResponse {
+public class WeatherResponse {//APIを受け取る
 
     public List<Forecast> forecasts;
 

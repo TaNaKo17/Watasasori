@@ -19,7 +19,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class WeatherAlarmReceiver extends BroadcastReceiver {
+public class WeatherAlarmReceiver extends BroadcastReceiver {//アラームを受け取る
 
     @Override
     public void onReceive(Context context, Intent intent) {
