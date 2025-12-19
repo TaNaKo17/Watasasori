@@ -30,7 +30,7 @@
             </intent-filter>
         </activity>
 
-        <!-- ★ Receiverはここに書く -->
+
         <receiver
             android:name=".WeatherAlarmReceiver"
             android:exported="false" />

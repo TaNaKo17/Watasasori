@@ -51,9 +51,7 @@ public class MainActivity extends AppCompatActivity {//基礎プログラム
         buttonSetAlarm.setOnClickListener(v -> setWeatherAlarm());
     }
 
-    /* -----------------------------
-       通知権限リクエスト
-     ----------------------------- */
+
     private void requestNotificationPermission() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             if (ContextCompat.checkSelfPermission(

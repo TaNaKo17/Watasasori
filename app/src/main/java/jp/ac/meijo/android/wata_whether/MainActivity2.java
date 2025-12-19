@@ -46,8 +46,6 @@ public class MainActivity2 extends AppCompatActivity {//アラーム
             var intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         });
-
-        // -------- 通知権限チェック --------
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             if (ActivityCompat.checkSelfPermission(
                     this,
