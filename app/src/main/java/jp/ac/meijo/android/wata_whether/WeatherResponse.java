@@ -13,7 +13,7 @@ public class WeatherResponse {//APIを受け取る
         public Temperature temperature;
     }
 
-    // --- Temperature ---
+
     public static class Temperature {
         public Temp min;
         public Temp max;

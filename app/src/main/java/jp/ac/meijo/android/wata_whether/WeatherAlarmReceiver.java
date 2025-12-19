@@ -24,7 +24,7 @@ public class WeatherAlarmReceiver extends BroadcastReceiver {//アラームを�
     @Override
     public void onReceive(Context context, Intent intent) {
 
-        // ★ Receiver の寿命を延ばす（重要）
+
         PendingResult pendingResult = goAsync();
 
         // ===== 通知チャンネル作成（Android 8+ 必須）=====
