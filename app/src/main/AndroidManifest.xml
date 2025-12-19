@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- 権限 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
@@ -18,16 +19,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Wata_Whether">
+
         <activity
             android:name=".MainActivity2"
             android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -35,6 +37,10 @@
         <receiver
             android:name=".AlarmReceiver"
             android:exported="true" />
+        <!-- ★ Receiverはここに書く -->
+        <receiver
+            android:name=".WeatherAlarmReceiver"
+            android:exported="false" />
 
     </application>
 
